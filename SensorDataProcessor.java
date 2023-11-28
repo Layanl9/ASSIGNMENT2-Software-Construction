@@ -1,12 +1,5 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- */
 package com.mycompany.sensordataprocessor;
 
-/**
- *
- * @author layan
- */
 public class SensorDataProcessor {
 // Senson data and limits.
 
@@ -14,7 +7,7 @@ public class SensorDataProcessor {
     public double[][] limit;
 // constructor
 
-    public DataProcessor(double[][][] data, double[][] limit) {
+    public SensorDataProcessor(double[][][] data, double[][] limit) {
         this.data = data;
         this.limit = limit;
     }
