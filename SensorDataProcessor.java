@@ -1,4 +1,7 @@
 package com.mycompany.sensordataprocessor;
+import java.io.BufferedWriter;
+import java.io.FileWriter;
+import java.io.IOException;
 
 public class SensorDataProcessor {
 // Senson data and limits.
