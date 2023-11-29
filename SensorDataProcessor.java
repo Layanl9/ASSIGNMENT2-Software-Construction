@@ -61,8 +61,15 @@ public class SensorDataProcessor {
                 }
             }
             out.close();
-        } catch (Exception e) {
-            System.out.println("Error= " + e);
+        } catch (IOException e) {
+            System.out.println("Error: " + e);
+        } finally {
+            try {
+                if (out != null)
+                    out.close();
+            } catch (IOException e) {
+                System.out.println("Error closing the file: " + e);
+            }
         }
     }
 }
