@@ -29,7 +29,7 @@ public class SensorDataProcessor {
     public void calculate(double d) {
         int i, j, k = 0;
         double[][][] data2 = new double[data.length][data[0].length][data[0][0].length];
-        BufferedWriter out;
+        BufferedWriter null;
 // Write racing stats data into a file
         try {
             out = new BufferedWriter(new FileWriter("RacingStatsData.txt"));
