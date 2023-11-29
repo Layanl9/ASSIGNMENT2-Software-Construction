@@ -29,7 +29,7 @@ public class SensorDataProcessor {
     public void calculate(double d) {
         int i, j, k = 0;
         double[][][] data2 = new double[data.length][data[0].length][data[0][0].length];
-        BufferedWriter out= null;
+        BufferedWriter out;
 // Write racing stats data into a file
         try {
             out = new BufferedWriter(new FileWriter("RacingStatsData.txt"));
@@ -62,14 +62,8 @@ public class SensorDataProcessor {
             }
             out.close();
         } catch (IOException e) {
-            System.out.println("Error: " + e);
-        } finally {
-            try {
-                if (out != null)
-                    out.close();
-            } catch (IOException e) {
-                System.out.println("Error closing the file: " + e);
-            }
+           System.out.println("Error= "+ e.getMessage());
+        
         }
     }
 }
